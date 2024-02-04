@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+    <a href="index.html" class="logo"><img src="logo.png" ></a>
+     <div class="search-box">
+        <img src="search.png" >
+        <input type="text" placeholder="Search">
+      </div>
+  </div>
+  <div class="navbar-center">
+    <ul>
+      <li><a href="#" class="active-link"><img src="home.png" alt=""><span>Home</span></a></li>
+      <li><a href="#"><img src="network.png" alt=""><span>My Network</span></a></li>
+      <li><a href="#"><img src="jobs.png" alt=""><span>Jobs</span></a></li>
+      <li><a href="#"><img src="message.png" alt=""><span>Massaging</span></a></li>
+      <li><a href="#"><img src="notification.png" alt=""><span>Notification</span></a></li>
+    </ul>
+  </div>
+    <div class="navbar-right">
+    <div class="online">
+      <img src ="akashtiwari .jpg" class="nav-profile-img" onclick="toggleMenu()">
+    </div>
+  </div>
+
+  <div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+      <div class="user-info">
+        <img src="akashtiwari .jpg" alt="">
+        <div>
+          <h3>Akash Tiwari</h3>
+          <h4 id="user-info-h4">C || Data Structure || HTML || CSS || JAVASCRIPT</h4>
+    <a href="profile.html">Your Profile</a>
+        </div>
+      </div>
+      <hr>
+      <a href="#" class="profile-menu-link">
+        <img src="feedback.png">
+        <p>Give Feedback</p>
+        <span>></span>
+      </a>
+      <a href="#" class="profile-menu-link">
+        <img src="setting.png">
+        <p>Setting & Privecy</p>
+        <span>></span>
+      </a>
+      <a href="#" class="profile-menu-link">
+        <img src="help.png">
+        <p>Help & Support</p>
+        <span>></span>
+      </a>
+      <a href="#" class="profile-menu-link">
+        <img src="display.png">
+        <p>display & Accessibility</p>
+        <span>></span>
+      </a>
+      <a href="#" class="profile-menu-link">
+        <img src="logout.png">
+        <p>logout</p>
+        <span>></span>
+      </a>
+    </div>
+  </div>
+  </nav>
+
+ <div class="container">
+  <div class="left-slidebar">
+    <div class="sidebar-profile-box">
+      <img src="libackground.jpg" width="100%" >
+      <div class="sidebar-profile-info">
+        <img src="akashtiwari .jpg" alt="">
+        <h1>Akash Tiwari</h1>
+        <h3>web Developer</h3>
+        <ul>
+          <li>profile view<span> 12</span></li>
+          <li>post Impression  <span>  11</span></li>
+          <li>Connection <span> 81</span></li>
+        </ul>
+      </div>
+      <div class="slidebar-profile-link">
+        <a href="#"><img src="items.png">My Items</a>
+        <a href="#"><img src="premium.png">Try Premium</a>
+      </div>
+    </div>
+    <div class="sidebar-activity" id="sidebarActivity">
+      <h3>Recent</h3>
+      <a href="#" class="border"><img src="recent.png" >Web Development</a>
+      <a href="#" class="border"><img src="recent.png" >User Interface</a>
+      <a href="#" class="border"><img src="recent.png" >HTML</a>
+      <a href="#" class="border"><img src="recent.png" >CSS</a>
+      <a href="#" class="border"><img src="recent.png" >Javacript</a>
+       <h3>Groups</h3>
+       <a href="#" class="border"><img src="group.png">JavaScript</a>
+       <a href="#" class="border"><img src="group.png">Python Developers Community</a>
+       <a href="#" class="border"><img src="group.png">User Experience Design</a>
+       <h3>Hashtag</h3>
+       <a href="#" class="border"><img src="hashtag.png">HTML</a>
+       <a href="#" class="border"><img src="hashtag.png">Javascript</a>
+       <div class="discover-more-link border">
+        <a href="#" >Discover More</a>
+       </div> 
+    </div>
+    <p id="showMoreLink" onclick="toggleActivity()">Show more<b>+</b></p>
+  </div>
+  
+     <div class="main-content">
+          <div class="create-post">
+        <div class="create-post-input">
+        <img src="akashtiwari .jpg">
+       <textarea  rows="2" placeholder="Start a Post" class="border"></textarea>
+        </div>
+        <div class="create-post-link">
+          <li class="border"><img src="photo.png">Photo</li>
+          <li class="border"><img src="video.png">Video</li>
+          <li class="border"><img src="event.png">Event</li>
+        </div>
+      </div>
+
+      <div class="sort-by">
+        <hr>
+        <p>Sort by:<span>Top <img src="down-arrow.png" alt=""></span></p>
+      </div>
+
+
+
+      <div class="post">
+        <div class="post-author">
+          <img src="user-3.jpeg">
+          <div>
+            <h1>Sameer Rajpoot</h1>
+            <small>HR @ cloudserver software</small>
+            <small>4hours ago</small>
+          </div>
+        </div>
+         <p>Get ready for endless opportunities! Developer-2-Developer<br> 3.0 is coming your way, opening doors to new connections, <br>growth, and innovation.  Register now for Feb 10th to seize <br> your chance!</p>
+         <img src="sameer rajpoot.jpg" width="100%" class="postimg">
+      <div class="post-stats">
+        <div>
+          <img src="thumbsup.png">
+          <img src="love.png">
+          <img src="clap.png">
+           <span class="liked-user">Mohit Mishra and 98 others</span>
+        </div>
+        <div>
+          <span>40 comments &middot; 40 reports</span>
+        </div>
+      </div>
+       <div class="post-activity">
+        <div class="post-activity-link">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="repost.jpg">
+          <span>Repost</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="send.png">
+          <span>Send</span>
+        </div>
+       </div>
+      </div>
+ 
+      <div class="post">
+        <div class="post-author">
+          <img src="akash singh.jpeg">
+          <div>
+            <h1>Akash Singh</h1>
+            <small>Certified in investment Banking and Hedge Fund Operatio &middot;&middot;&middot;</small>
+            <small>1w</small>
+          </div>
+        </div>
+         <p><pre>           भए प्रगट कृपाला दीनदयाला,
+           कौसल्या हितकारी ।
+           हरषित महतारी, मुनि मन हारी,
+           अद्भुत रूप बिचारी ॥
+            Jai Shree Ram</pre></p>
+         <img src="Ramji.jpeg" width="100%" class="postimg">
+      <div class="post-stats">
+        <div>
+          <img src="thumbsup.png">
+          <img src="love.png">
+          <img src="clap.png">
+           <span class="liked-user">Narendra Modi and 1008others</span>
+        </div>
+        <div>
+          <span>108 comments &middot; 108 reposts</span>
+        </div>
+      </div>
+       <div class="post-activity">
+        <div class="post-activity-link">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="repost.jpg">
+          <span>Repost</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="send.png">
+          <span>Send</span>
+        </div>
+       </div>
+      </div>
+
+      <div class="post">
+        <div class="post-author">
+          <img src="gaurav.jpeg">
+          <div>
+            <h1>Gaurav Kumar</h1>
+            <small>Student at Galgotias University</small>
+            <small>2w</small>
+          </div>
+        </div>
+         <p><pre>Hello Dear &middot;
+               I Have Sussesfull Complete My Internship For Oracal 
+               Acendemy
+         </pre></p>
+         <img src="gaurav1.jpeg" width="100%" class="postimg">
+      <div class="post-stats">
+        <div>
+          <img src="thumbsup.png">
+          <img src="love.png">
+          <img src="clap.png">
+           <span class="liked-user">Akash Tiwari and 198 others</span>
+        </div>
+        <div>
+          <span>140 comments &middot; 240 reposts</span>
+        </div>
+      </div>
+       <div class="post-activity">
+        <div class="post-activity-link">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="repost.jpg">
+          <span>Repost</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="send.png">
+          <span>Send</span>
+        </div>
+       </div>
+      </div>
+      <div class="post">
+        <div class="post-author">
+          <img src="prasant.jpeg">
+          <div>
+            <h1>Prashant Dubey</h1>
+            <small>Developer @Addverb | knignt</small>
+            <small>4hours ago</small>
+          </div>
+        </div>
+         <p>*When i use linerar search instead of binary search in an array*</p>
+         <img src="prasant1.jpeg" width="100%" class="postimg">
+      <div class="post-stats">
+        <div>
+          <img src="thumbsup.png">
+          <img src="love.png">
+          <img src="clap.png">
+           <span class="liked-user">Aishwarya saxena and 1774</span>
+        </div>
+        <div>
+          <span>30 comments &middot; 12 reposts</span>
+        </div>
+      </div>
+       <div class="post-activity">
+        <div class="post-activity-link">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="repost.jpg">
+          <span>Repost</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="send.png">
+          <span>Send</span>
+        </div>
+       </div>
+      </div>
+      <div class="post">
+        <div class="post-author">
+          <img src="main.jpeg">
+          <div>
+            <h1>Akash Tiwari</h1>
+            <small>Full Stack Developer</small>
+            <small>4hours ago</small>
+          </div>
+        </div>
+         <p>Hello Connections.<br>
+           I am excited to announce that I have recently completed one month Front-End Internship at codsoft . It was an amazing learning experience, and I am grateful for the opportunity . I gained valuable experience in front-end development
+         <br> #codsoft #codsoftinternship #intenship</p>
+         <img src="main1.jpeg" width="100%" class="postimg">
+      <div class="post-stats">
+        <div>
+          <img src="thumbsup.png">
+          <img src="love.png">
+          <img src="clap.png">
+           <span class="liked-user">Adarsh Choubey &middot; 998 others</span>
+        </div>
+        <div>
+          <span>40 comments and 40 shares</span>
+        </div>
+      </div>
+       <div class="post-activity">
+        <div class="post-activity-link">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="repost.jpg">
+          <span>Repost</span>
+        </div>
+        <div class="post-activity-link">
+          <img src="send.png">
+          <span>Send</span>
+        </div>
+       </div>
+      </div>
+
+
+
+
+    </div>  
+     <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="more.png" alt="" class="info-icon">
+            <h3>Linkedin News</h3>
+              <a href="#">India gets first AI unicons </a>
+              <span>2h ago &middot; 338 readers </span>
+
+              <a href="#">OTT has an eyes newer avenues</a>
+              <span>1d ago &middot; 231 readers </span>
+
+              <a href="#">India inc on the hunt for directors </a>
+              <span>4d ago &middot; 2021 readers </span>
+
+             <a href="#">LSEG to hire 1000</a>
+             <span>5d ago &middot; 8221 readers </span>
+            
+              <a href="#" class="read-more-1ink">Read More</a>
+         </div>
+       
+  
+    <div class="sidebar-ad">
+        <small>Ad &middot; &middot; &middot; </small>
+        <p>Master the 5 priciples of web degin</p>
+    <div>
+        <img src="akashtiwari .jpg">
+        <img src="key.jpeg" class="key">
+    </div>
+<b>see who's viewed your profile in the last 90 days</b>
+      <a href="#" class="ad-link">Try for free!</a>
+ </div>
+<div class="sidebar-useful-link">
+   <a href="#">About</a>
+   <a href="#">Accessibility</a>
+   <a href="#">Help Center</a>
+   <a href="#">Privecy & Teams</a>
+   <a href="#">Ad Choices</a>
+   <a href="#">Advertising</a>
+   <a href="#">Business Services</a>
+   <a href="#">Get the linkedin app</a>
+   <a href="#">More</a>
+   <div class="copyright-msg">
+    <img src="logo.png" alt="">
+    <p>LinkedIn Corporation &#169; 2024.</p>
+  </div>
+</div>
+</div>
+</div>
+<script src="linkedin.js"></script>
+
+</body>
+</html>
